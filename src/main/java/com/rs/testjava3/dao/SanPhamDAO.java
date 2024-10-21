@@ -12,7 +12,7 @@ public class SanPhamDAO {
         String sql = "SELECT * FROM sanpham";
         try {
             List<SanPham> entities = new ArrayList<>();
-            Object[] values = {};
+            Object[] values = {}; // Không tham số
             ResultSet resultSet = XJdbc.executeQuery(sql, values);
             while (resultSet.next()) {
                 SanPham entity = new SanPham();
